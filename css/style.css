@@ -96,3 +96,31 @@ body{
     font-size: 2.5rem;
     }}
 /***** End general *****/
+/***** footer *****/
+footer .flex-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+footer{
+    padding: 3.125rem 0;
+    text-align: center;
+    background: var(--dark-title);
+    color: var(--white-text);
+}
+footer a{
+    color: var(--logo-pink);
+}
+.socialAccounts{
+    display: flex;
+}
+.socialAccounts li a{
+    color: var(--white-text);
+    display: block;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    padding: 0 0.625rem;
+}
+/***** End footer *****/
