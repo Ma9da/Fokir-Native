@@ -96,6 +96,86 @@ body{
     font-size: 2.5rem;
     }}
 /***** End general *****/
+/***** navbar *****/
+.navColored{
+    background-color: var(--dark-title) !important;
+}
+.navTransparent{
+    background: transparent;
+}
+.navbar{
+    padding: 1.125rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+.navHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.navToggle{
+    color: var(--white-text);
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.5625rem;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+}
+.logo{
+    color: var(--logo-pink);
+    font-size: 1.5rem;
+}
+.navLink a{
+    color: var(--white-text);
+    text-transform: capitalize;
+}
+.navLinks{
+    display: none;
+    flex-direction: column;
+    background: var(--dark-title);
+    color: var(--white-text);
+    text-align: center;
+    width: 100%;
+}
+.navLink:first-child a{
+    color: var(--logo-pink);
+}
+.navLink{
+    padding: 0.75rem 0;
+}
+@media only screen and (min-width:678px) {
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navLinks{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: transparent;
+    }
+    .navLink{
+        padding: 1.25rem 0.625rem;
+        font-weight: 300;
+    }
+    .navLogo{
+        display: block;
+        width: 9.375rem;
+    }
+    .navToggle{
+        display: none;
+    }
+    .navbar{
+        padding: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+}
+/***** End navbar *****/
 /***** hero *****/
 .hero{
     height: 100vh;
@@ -704,3 +784,4 @@ footer a{
     padding: 0 0.625rem;
 }
 /***** End footer *****/
+

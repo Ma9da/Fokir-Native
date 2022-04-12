@@ -1,13 +1,17 @@
 let navToggle = document.getElementsByClassName("navToggle")[0]
 let navLinks = document.getElementsByClassName("navLinks")[0]
 let navbar = document.getElementsByClassName("navbar")[0]
+<<<<<<< HEAD
 let filterSelection = document.getElementsByClassName("filterSelection")
 let allImages = document.getElementsByClassName('all')
+=======
+>>>>>>> main
 // toggle menu
 navToggle.addEventListener("click", menuDown);
 function menuDown() {
     navLinks.style.display === "flex" ? navLinks.style.display = "none" : navLinks.style.display = "flex"
 }
+<<<<<<< HEAD
 let TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -59,6 +63,8 @@ function injectCss(){
     }
 
 
+=======
+>>>>>>> main
 window.onscroll = function () {
     const VERTICAL_SPACE = 200
     if (document.body.scrollTop >= VERTICAL_SPACE || document.documentElement.scrollTop >= VERTICAL_SPACE) {
@@ -70,6 +76,7 @@ window.onscroll = function () {
         navbar.classList.remove("navColored");
     }
 }
+<<<<<<< HEAD
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -119,3 +126,5 @@ function addActive(e) {
     }
     e.target.className += " active";
 }
+=======
+>>>>>>> main
