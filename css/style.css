@@ -571,3 +571,50 @@ body{
     }
 }
 /***** End client *****/
+/***** blog *****/
+.blog{
+    background: var(--light-bg);
+    padding: 3.75rem 0 1.875rem;
+}
+.blog .flex-container{
+    justify-content: center;
+}
+.blogVideos{
+    color: var(--dark-text);
+}
+.blogDesc{
+    padding: 1.25rem;
+}
+.blogDesc h3{
+    padding-bottom: 0.9375rem;
+}
+.blogDesc a{
+    color: var(--dark-title);
+
+}
+.blogDesc p{
+    padding:  0 0 0.9375rem;
+}
+.blogVideo{
+    background: var(--white-text);
+    margin-bottom: 30px;
+}
+.blogVideo figcaption{
+    margin-bottom: 0.625rem;
+}
+.blogVideo iframe{
+    width: 100%;
+}
+.readMore{
+    text-transform: uppercase;
+}
+@media only screen and (min-width:768px) {
+    .blogVideos{
+        display: flex;
+        justify-content: space-between;
+    }
+    .blogVideo{
+        width: 30.33%;
+    }
+}
+/***** End blog *****/
