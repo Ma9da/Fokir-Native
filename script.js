@@ -1,29 +1,6 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("clientCard");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" activeSlide", "");
-    }
-    slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " activeSlide";
-}
+let filterSelection = document.getElementsByClassName("filterSelection")
+let allImages = document.getElementsByClassName('all')
 TxtRotate.prototype.tick = function () {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
@@ -62,8 +39,6 @@ function injectCss() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 }
-let filterSelection = document.getElementsByClassName("filterSelection")
-let allImages = document.getElementsByClassName('all')
 // items filtration
 for (let i = 0; i < filterSelection.length; i++) {
     filterSelection[i].addEventListener("click", filterDisplay)
@@ -85,4 +60,30 @@ function addActive(e) {
         item.classList.remove("active")
     }
     e.target.className += " active";
+}
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("clientCard");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activeSlide", "");
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " activeSlide";
 }
