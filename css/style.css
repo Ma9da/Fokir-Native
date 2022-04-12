@@ -428,3 +428,43 @@ body{
     }
 }
 /***** End portfolio *****/
+/***** numbers *****/
+.numbers{
+    background: var(--light-bg);
+    padding: 3.75rem 0 1.875rem;
+}
+.numbers .flex-container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.numbersCards span i{
+    color: var(--logo-pink);
+    margin-bottom: 0.9375rem;
+    font-size: 1.625rem;
+}
+.numbersCards h3{
+    margin-bottom: 0.3125rem;
+    font-weight: 800;
+    color: var(--dark-title);
+    font-size: 1.625rem;
+}
+.numbersCards p{
+    font-size: 1rem;
+}
+.numbersCards{
+    margin-bottom: 1.875rem;
+}
+@media only screen and (min-width:768px) {
+    .numbers{
+        padding: 6.25rem 0;
+    }
+    .numbers .flex-container{
+        flex-direction: row;
+    }
+    .numbersCards{
+        width: 25%;
+    }
+}
+/***** End numbers *****/
