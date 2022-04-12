@@ -274,3 +274,78 @@ body{
     }
 }
 /***** End hello *****/
+/***** services *****/
+.service{
+    background: var(--light-bg);
+    padding: 6.25rem 0 3.375rem;
+}
+.service .flex-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.servicesCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servicesCard{
+    text-align: center;
+    padding: 2.1875rem 1.5625rem;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.servicesCard i{
+    color: var(--logo-pink);
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+.serviceCards h3{
+    color: var(--dark-title);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 0.9375rem;
+    text-transform: uppercase;
+}
+.servicesCard:hover{
+    background: var(--white-text) none repeat scroll 0 0;
+    -webkit-box-shadow: 0 15px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 15px 20px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.servicesCard:hover  i{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+@media only screen and (min-width:768px) {
+    .servicesCards{
+        flex-direction: row;
+    }
+    .servicesCard{
+        width: 50%;
+        padding: 2.5rem 0.9375rem;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .servicesCard{
+        width: 25%;
+    }
+}
+/***** End services *****/
